@@ -1,0 +1,8 @@
+@import '../../../style/style.scss';
+
+.introduction {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: map-get($palette, level1);
+}

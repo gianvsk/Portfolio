@@ -1,0 +1,40 @@
+@import '../../../style/style.scss';
+
+.skills {
+    background-color: map-get($palette, base);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+}
+
+.bg-icon-circle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 24px 0;
+    background-image: url('/images/icons/Ellipse.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-icon-pen {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 24px 0;
+    background-image: url('/images/icons/Pen.svg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.icon {
+    padding: 0 0 24px 0;
+}
+
+.icon-diagonal {
+    transform: translate(14px, -9px);
+}

@@ -1,0 +1,11 @@
+@import '../../../style/style.scss';
+
+.experiences {
+    background-color: map-get($palette, base);
+
+    &__container {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

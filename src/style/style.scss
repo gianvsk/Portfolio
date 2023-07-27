@@ -1,0 +1,284 @@
+$palette: (
+    base: #000,
+    level1: #181823,
+    light-grey: #DEECF9,
+    dark-grey: #C7E0F4,
+    darkest-grey: #5B6876,
+    text: #FFF,
+    primary: #5221E6,
+    light-primary: #609BFF,
+    green-accent: #3CC74E,
+    pink-accent: #E95D90,
+    peach-accent: #FFF3E4,
+    violet-accent: #FBE4FF
+);
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.padding-top-40 {
+    padding-top:40px;
+}
+
+.padding-y-48 {
+    padding:48px 20px;
+} 
+
+.padding-y-64 {
+    padding:64px 20px;
+} 
+
+@font-face {
+    font-family: SenRegular;
+    src: url('../fonts/Sen/Sen-Regular.woff');
+}
+
+@font-face {
+    font-family: SenBold;
+    src: url('../fonts/Sen/Sen-Bold.woff');
+}
+
+.heading1 {
+    font-family: SenBold;
+    font-style: normal;
+    line-height: normal;
+    margin:0;
+    text-align: left;
+}
+
+.heading2 {
+    font-family: SenBold;
+    font-style: normal;
+    line-height: normal;
+    margin:0;
+    text-align: left;
+}
+
+.heading3 {
+    font-family: SenBold;
+    font-style: normal;
+    line-height: normal;
+    margin:0;
+    text-align: left;
+}
+
+.heading4 {
+    font-family: SenBold;
+    font-style: normal;
+    margin:0;
+    text-align: left;
+}
+
+.heading5 {
+    font-family: SenBold;
+    font-style: normal;
+    margin:0;
+    text-align: left;
+}
+
+.body1 {
+    font-family: SenRegular;
+    font-style: normal;
+    margin: 0;
+    text-align: left;
+}
+
+.body2 {
+    font-family: SenRegular;
+    font-style: normal;
+    margin: 0;
+    text-align: left;
+}
+
+.overline {
+    font-family: SenBold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin:0;
+    text-align: left;
+}
+
+.button {
+    font-family: SenBold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin:0;
+    text-align: left;
+}
+
+.base {
+    color: map-get($palette, base);
+}
+
+.level1 {
+    color: map-get($palette, level1);
+}
+
+.light-grey {
+    color: map-get($palette, light-grey);
+}
+
+.dark-grey {
+    color: map-get($palette, dark-grey);
+}
+
+.darkest-grey {
+    color: map-get($palette, darkest-grey);
+}
+
+.text {
+    color: map-get($palette, text);
+}
+
+.primary {
+    color: map-get($palette, primary);
+}
+
+.light-primary {
+    color: map-get($palette, light-primary);
+}
+
+.green-accent {
+    color: map-get($palette, green-accent);
+}
+
+.pink-accent {
+    color: map-get($palette, pink-accent);
+}
+
+.peach-accent {
+    color: map-get($palette, peach-accent);
+}
+
+.violet-accent {
+    color: map-get($palette, violet-accent);
+}
+
+@media screen and (min-width: 0) {
+
+    .label {
+        font-size: 117px;
+        font-weight: 700;
+    }
+
+    .heading1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .heading2 {
+        font-size: 55px;
+        font-weight: 700;
+    }
+    
+    .heading3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .heading4 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    
+    .heading5 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    .body1 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    .body2 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    .overline {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    
+    .button {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    .heading1 {
+        font-size: 76px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .heading2 {
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .heading3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .heading4 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    
+    .heading5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    
+    .body1 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    .body2 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+    
+    .overline {
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+    
+    .button {
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+}
