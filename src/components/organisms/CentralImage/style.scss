@@ -1,0 +1,84 @@
+@import '../../../style/style.scss';
+
+.central-image-container {
+    display:flex;
+    justify-content: center;
+    background-color: map-get($palette, base);
+}
+
+.central-image-container-elements {
+    width: 1076px;
+    display:flex;
+    flex-direction: column;
+    gap: 53px;
+    margin: 64px 20px 53px 20px;
+
+    &__titles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__image-container {
+        width: 100%;
+    }
+}
+
+.markers-container {
+    width:100%;
+    height:37px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: map-get($palette,level1);
+
+    &__markers {
+        padding-left:16px;
+    }
+}
+
+.central-image {
+    min-height: 260px;
+    width: 100%;
+    background-image: url('/images/pictures/Devices.png');
+    background-size: 100% 130%;
+    background-position-y:80%;
+}
+
+@media screen and (min-width:768px) {
+    
+    .central-image-container-elements {
+        width: 1076px;
+        gap: 120px;
+        margin: 120px auto 120px auto;
+    
+        &__titles {
+            width: 60%;
+        }
+    
+        &__image-container {
+            width: 100%;
+        }
+    }
+    
+    .markers-container {
+        width:100%;
+        height:37px;
+        background-color: map-get($palette,level1);
+    
+        &__markers {
+            padding-left:16px;
+        }
+    }
+    
+    .central-image {
+        height: 603px;
+        width: 100%;
+        background-image: url('/images/pictures/Devices.png');
+        background-size: 100% 172%;
+        background-position-y:0%;
+    }
+
+}

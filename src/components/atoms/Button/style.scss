@@ -1,0 +1,20 @@
+@import '../../../style/style.scss';
+
+.button {
+    display:none;
+}
+
+@media screen and (min-width:768px) {
+    .button {
+        display:inline-flex;
+        box-sizing: border-box;
+        padding:24px 32px;
+        border: 1px solid map-get($palette,primary);
+        font-size:18px;
+        font-family: SenBold;
+        text-transform: uppercase;
+        color: map-get($palette, text);
+        text-align: center;
+        margin:auto auto;
+    }
+}

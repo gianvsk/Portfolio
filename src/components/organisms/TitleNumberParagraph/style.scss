@@ -1,0 +1,22 @@
+@import '../../../style/style.scss';
+
+.experiences {
+    background-color: map-get($palette, base);
+
+    &__container {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .experiences {
+        &__container {
+            width:100%;
+            margin-top:0;
+        }
+    }
+}

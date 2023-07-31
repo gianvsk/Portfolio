@@ -1,0 +1,258 @@
+@import '../../../style/style.scss';
+
+.container {
+    display:flex;
+}
+
+.padding-xs {
+    padding: 24px 20px;
+}
+
+.padding-small {
+    padding: 48px 20px;
+}
+
+.padding-medium {
+    padding: 64px 20px;
+}
+
+.padding-xl {
+    padding: 64px 20px 64px 20px;
+}
+
+.padding-60-72 {
+    padding: 60px 72px;
+}
+
+.padding-0-72 {
+    padding:0 72px;
+}
+
+.bg-base {
+    background-color: map-get($palette, base)
+}
+
+.bg-level1 {
+    background-color: map-get($palette, level1);
+}
+
+.bg-peach {
+    background-color: map-get($palette, peach-accent);
+}
+
+.bg-violet {
+    background-color: map-get($palette, violet-accent);
+}
+
+.column {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.adapt-row {
+    flex-direction: row;
+}
+
+.adapt-column {
+    flex-direction: column;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-medium {
+    row-gap: 24px;
+}
+
+.gap-24 {
+    gap:24px;
+}
+
+.gap-64 {
+    gap:64px;
+}
+
+.xs-flex-column-around-start {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.xs-gap-medium {
+    gap:40px;
+}
+
+.title-paragraph-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gap-small {
+    gap: 8px;
+}
+
+.gap-medium {
+    gap: 12px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.xs-gap-medium {
+    gap:40px;
+}
+
+.padding-xl-half {
+    padding: 60px 72px;
+}
+
+.magin-top-40 {
+    margin-top: 40px;
+}
+
+.flex-column-start {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width:768px) {
+
+    /*     .container {
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    .padding-xl {
+        padding: 120px 72px;
+    }
+
+    .adapt-row {
+        flex-direction: column;
+    }
+
+    .adapt-column {
+        flex-direction: row;
+    }
+
+    .gap-large {
+        gap: 24px;
+    }
+
+    .grid-2-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-3-col {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .flex-column-start-around {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .flex-row-beetwen-center {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .xs-flex-column-around-start {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .height-450-600 {
+        height: 600px;
+    }
+
+    .margin-top-medium {
+        margin-top: 40px;
+    }
+    
+    .xs-gap-medium {
+        gap:0;
+    }
+
+    .grid-row-col {
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .title-paragraph-wrapper {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 2;
+    }
+
+    .lg-padding-small-title-paragraph {
+        padding: 0 0 48px 0;
+    }
+
+    .lg-padding-medium-title-paragraph {
+        padding: 0 40px 0 140px;
+    }
+
+    .gap-large {
+        gap: 32px;
+    }
+
+    .lg-gap-32 {
+        gap:32px;
+    }
+
+    .xs-gap-medium {
+        gap:0;
+    }
+
+    .lg-padding-right-48 {
+        padding-right:48px;
+    }
+
+    .lg-margin-top-0 {
+        margin-top:0 ;
+    }
+
+    .lg-flex-column-start-start {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+
+}

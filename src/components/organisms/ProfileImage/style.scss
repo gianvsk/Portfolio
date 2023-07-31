@@ -6,3 +6,10 @@
     background-position: 50%;
     height:288px;
 }
+
+@media screen and (min-width: 768px) {
+    .profile-image {
+        margin-top:0;
+        height: 100%;
+    }
+}

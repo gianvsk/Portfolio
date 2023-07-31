@@ -1,13 +1,14 @@
 import '../../../style/style.scss'
+import { Text } from '../Text/Text'
 
 type LabelProps = {
-    num : '01' | '02' | '03'
+    num : string
 }
  
 export const Label = ({num}: LabelProps) => {
 
     return (
-        <label className='label'>{num.toString()}</label>
+        <Text tag='label' modifier='text-align-left' color='grey-label'>{num.toString()}</Text>
     )
 
 }

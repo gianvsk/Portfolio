@@ -1,0 +1,78 @@
+@import '../../../style/style.scss';
+
+.list {
+    background-color: map-get($palette, base);
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.icon-spacing {
+    margin-bottom: 24px;
+}
+
+.icon-size {
+    width:32px;
+    height:32px;
+}
+
+.bg-icon-square {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 24px 0;
+    background-image: url('/images/icons/Square.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-icon-circle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0 0 24px 0;
+    background-image: url('/images/icons/Ellipse.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.bg-icon-pen {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 24px 0;
+    background-image: url('/images/icons/Pen.svg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.icon-diagonal {
+    transform: translate(11px, -9px);
+}
+
+@media screen and (min-width:768px) {
+    .list {
+        background-color: #000;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 0 0 0 24px;
+        column-gap:24px;
+        row-gap:40px;
+
+        &__container {
+            width: 48%;
+        }
+    }
+    
+}

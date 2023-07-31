@@ -1,16 +1,19 @@
+import { Text } from '../Text/Text'
 import './style.scss'
 
 type LinkUnderlineProps = {
     text: string
+    color: 'text' | 'base'
+    margin?: 'margin-top-40'
 }
 
-export const LinkUnderline = ({text} : LinkUnderlineProps) => {
+export const LinkUnderline = ({text, color, margin} : LinkUnderlineProps) => {
 
     return (
         <>
-        <a className='body2 base link-underline'>
+        <Text tag='a' color={color} margin={margin} >
             {text}
-        </a>
+        </Text>
         </>
     )
 

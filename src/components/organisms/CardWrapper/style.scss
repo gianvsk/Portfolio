@@ -1,0 +1,19 @@
+@import '../../../style/style.scss';
+
+@media screen and (min-width: 768px) {
+    
+    .card-wrapper {
+        display:flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        column-gap: 24px;
+        row-gap:25px;
+    
+        &__container {
+                width:49%;
+        }
+    }
+
+}
+
