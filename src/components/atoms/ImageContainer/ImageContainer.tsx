@@ -1,12 +1,14 @@
+import clsx from 'clsx'
 import './style.scss'
 
 type ImageContainerProps = {
     source: string
+    type: 'image' | 'icon'
 }
 
-export const ImageContainer = ({source} : ImageContainerProps) => {
+export const ImageContainer = ({source, type} : ImageContainerProps) => {
 
     return (
-            <img className="image" src={source} />
+            <img className={clsx(type)} src={source} />
     )
 }

@@ -1,19 +1,60 @@
 @import '../../../style/style.scss';
 
+.card-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+}
+
+.card-wrapper-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:8px;
+}
+
 @media screen and (min-width: 768px) {
     
     .card-wrapper {
-        display:flex;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7,255px);
         align-items: flex-start;
         justify-content: flex-start;
         flex-wrap:wrap;
         column-gap: 24px;
         row-gap:25px;
+        padding: 0 0 120px 0;
     
-        &__container {
-                width:49%;
+        &__container--1 {
+            width:100%;
+            grid-column: 2/3;
+            grid-row: 1/4;
+        }
+        &__container--2 {
+            width:100%;
+            grid-column: 1/2;
+            grid-row: 2/5;
+        }
+        &__container--3 {
+            width:100%;
+            grid-column: 2/3;
+            grid-row: 4/7;
+        }
+        &__container--4 {
+            width:100%;
+            grid-column: 1/2;
+            grid-row: 5/8;
+        }
+
+        &__button {
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-
 }
 

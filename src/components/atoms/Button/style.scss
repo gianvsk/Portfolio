@@ -1,12 +1,70 @@
 @import '../../../style/style.scss';
 
 .button {
+    display:inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:24px 32px;
+    border: 1px solid map-get($palette,primary);
+    font-size:18px;
+    font-family: SenBold;
+    text-transform: uppercase;
+    color: map-get($palette, text);
+    margin:auto auto;
+
+    &:hover {
+        background-color: map-get($palette, primary);
+        color: map-get($palette, text);
+    }
+}
+
+.button-small {
+    width:46.5%;
+    display:inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:24px 32px;
+    border: 1px solid map-get($palette,primary);
+    font-size:18px;
+    font-family: SenBold;
+    text-transform: uppercase;
+    color: map-get($palette, text);
+    margin:0;
+
+    &:hover {
+        background-color: map-get($palette, primary);
+        color: map-get($palette, text);
+    }
+}
+
+.submit {
+    width:100%;
+    display:inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:24px 32px;
+    border: 1px solid map-get($palette,primary);
+    background-color: map-get($palette, primary);
+    font-size:18px;
+    font-family: SenBold;
+    text-transform: uppercase;
+    color: map-get($palette, text);
+    margin:0;
+
+    &:hover {
+        background-color: map-get($palette, primary);
+        color: map-get($palette, text);
+    }
+}
+
+.button-invisible {
     display:none;
 }
 
 @media screen and (min-width:768px) {
-    .button {
+    .button, .button-invisible {
         display:inline-flex;
+        justify-content: center;
         box-sizing: border-box;
         padding:24px 32px;
         border: 1px solid map-get($palette,primary);
@@ -14,7 +72,18 @@
         font-family: SenBold;
         text-transform: uppercase;
         color: map-get($palette, text);
-        text-align: center;
-        margin:auto auto;
+    }
+
+    .button-small {
+        width:auto;
+        display:inline-flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding:12px 16px;
+        border: 1px solid map-get($palette,primary);
+        font-size:18px;
+        font-family: SenBold;
+        text-transform: uppercase;
+        color: map-get($palette, text);
     }
 }

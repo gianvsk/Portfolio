@@ -17,12 +17,8 @@ export const CardColumnContainer = () => {
             <div className='card-column-container__cards-container'>
                 <Card
                     source='/images/pictures/Desktop.jpg'
-                    sourceHeight='height-360'
-                    tag2='h5'
                     paragraph='"Robin is one of the best designers I have worked with in my entire life. 
                     He is a designer who is very capable of taking up complex projects and delivers impeccable design."'
-                    color='text'
-                    gap='gap-64'
                      >
                     <div>
                     <Text tag='h5' color='grey-label'>Richard Owens</Text>
@@ -31,11 +27,7 @@ export const CardColumnContainer = () => {
                 </Card>
                 <Card
                     source='/images/pictures/People.jpg'
-                    sourceHeight='height-360'
-                    tag2='h5'
                     paragraph='"I think Robin has an incredible gift. It has been an absolute pleasure to work with a designer of this caliber."'
-                    color='text'
-                    gap='gap-64'
                      >
                     <div>
                     <Text tag='h5' color='grey-label'>Emily Parker</Text>
@@ -44,12 +36,8 @@ export const CardColumnContainer = () => {
                 </Card>
                 <Card
                     source='/images/pictures/Group.jpg'
-                    sourceHeight='height-360'
-                    tag2='h5'
                     paragraph='"All I can say that, Robin is a phenomenal designer. The wavelength at which he thinks is astoundaing. 
                     I love the focus, passion and attention to detial in the design."'
-                    color='text'
-                    gap='gap-64'
                      >
                     <div>
                     <Text tag='h5' color='grey-label'>Vincent Rudd</Text>

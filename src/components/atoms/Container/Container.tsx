@@ -12,7 +12,7 @@ type ContainerProps = {
     backgroundColor?: 'bg-base' | 'bg-level1' | 'bg-peach' | 'bg-violet'
     direction?: 'row' | 'column' | 'adapt-row' | 'adapt-column'
     gap?: 'gap-small' | 'gap-medium' | 'gap-large' | 'gap-16' | 'lg-gap-32' | 'gap-24' | 'gap-64'
-    gapX?: 'xs-gap-medium' | 'lg-gap-32'
+    gapX?: 'xs-gap-medium' | 'lg-gap-32' | 'lg-gap-18'
     marginTop? : 'margin-top-medium' | 'margin-top-40' | 'lg-margin-top-0'
     grid?: 'grid-2-col' | 'grid-3-col' | 'grid-row-col'
     wrap?: true | false

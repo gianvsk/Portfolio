@@ -11,7 +11,7 @@ export const LinkUnderline = ({text, color, margin} : LinkUnderlineProps) => {
 
     return (
         <>
-        <Text tag='a' color={color} margin={margin} >
+        <Text tag='a' color={color} margin={margin}>
             {text}
         </Text>
         </>

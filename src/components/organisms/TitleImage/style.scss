@@ -1,5 +1,10 @@
 @import '../../../style/style.scss';
 
+.title-image {
+    display:flex;
+    flex-direction: column;
+}
+
 .philosophy {
     height: 100%;
     width: 100%;
@@ -69,6 +74,10 @@
 
 @media screen and (min-width:786px) {
 
+    .title-image {
+        flex-direction: row;
+    }
+
     .philosophy {
         height: 100%;
         width: 50%;
@@ -92,7 +101,7 @@
     }
 
     .background-image {
-        height:100%;
+        height:600px;
         width:50%;
         background-size:100% 165%;
     }

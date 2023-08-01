@@ -1,34 +1,28 @@
 import { Text } from '../../atoms/Text/Text'
 import './style.scss'
-import { Container } from '../../atoms/Container/Container'
 import clsx from 'clsx'
 
 type CardProps = {
     source: string
-    sourceHeight?: 'height-360'
     title?: string
     paragraph: string
-    bodyPadding?: 'padding-xs'
-    color: 'grey-label' | 'text'
-    tag2: 'p' | 'h5'
-    gap?: 'gap-large' | 'gap-64'
     children?: React.ReactNode
 }
 
-export const Card = ({source, sourceHeight, title,paragraph,color,tag2, bodyPadding, gap, children}: CardProps) => {
+export const Card = ({ source, title, paragraph, children }: CardProps) => {
 
     return (
+        <>
 
-        <article className='card'>
-            <img className={clsx('card__image', sourceHeight)} src={source} />
-            <div className='card__body'>
-                <Container flex='flex-column-start' gap={gap} padding={bodyPadding}>
+            <article className={clsx('card--primary',{'card--secondary' : children})}>
+                <img className={clsx('card--primary__image', {'card--secondary__image' : children})} src={source} />
+                <div className={clsx('card--primary__body',{'card--secondary__body' : children})}>
                     {title && <Text tag='h3' color='text'>{title}</Text>}
-                    <Text tag={tag2} pType='body1' color={color}>{paragraph}</Text>
+                    <Text tag='p' pType='body1' color={ children ? 'text' : 'grey-label'}>{paragraph}</Text>
                     {children}
-                </Container>
-            </div>
-        </article>
+                </div>
+            </article>
+        </>
 
     )
 

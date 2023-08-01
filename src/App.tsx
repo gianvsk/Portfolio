@@ -9,6 +9,8 @@ import { TitleList } from './components/organisms/TitleList/TitleList'
 import { CentralImage } from './components/organisms/CentralImage/CentralImage'
 import { CardColumnContainer } from './components/organisms/CardColumnContainer/CardColumnContainer'
 import { ButtonsImages } from './components/organisms/ButtonsImages/ButtonsImages'
+import { TitleForm } from './components/organisms/TitleForm/TitleForm'
+import { Footer } from './components/organisms/Footer/Footer'
 
 function App() {
 
@@ -18,43 +20,28 @@ function App() {
       <Hero />
       <TitleNumberParagraph />
       <TitleImage
-        height='height-450-600'
-        source='/images/pictures/Sphere.jpg'
-        flex='flex-row-between-center'
-        flexX='xs-flex-column-around-start'
         title='Philosophy & values'
-        titleColor='base'
         text='I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, 
       and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.'
-        textColor='darkest-grey'
         buttonText='More about me'
-        buttonColor='base'
-        bgColor='bg-peach'
         image='first'
       />
       <TitleList />
       <BrandWrapper />
       <CardWrapper />
       <TitleImage
-        height='height-450-600'
-        source='/images/pictures/Plane.jpg'
-        flex='flex-row-between-center'
-        flexX='xs-flex-column-around-start'
         title='Instagram'
-        titleColor='base'
         text='If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. 
         I’m an avid traveller and I capture the best moments that I would love to cherish with the world'
-        textColor='darkest-grey'
         buttonText='Follow me on IG'
-        buttonColor='base'
-        bgColor='bg-peach'
         image='second'
         biggerTitle={true}
-        swapColor='xl-bg-violet'
       />
       <CentralImage/>
       <CardColumnContainer/>
       <ButtonsImages/>
+      <TitleForm/>
+      <Footer/>
     </>
   )
 }

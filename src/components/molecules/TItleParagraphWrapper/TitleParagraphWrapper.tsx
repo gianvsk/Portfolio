@@ -3,6 +3,8 @@ import './style.scss'
 import { Text } from "../../atoms/Text/Text"
 import { Container } from "../../atoms/Container/Container"
 import { Label } from '../../atoms/Label/Label'
+import clsx from 'clsx'
+
 /* import { useMemo } from 'react' */
 
 type TitleParagraphWrapperProps = {
@@ -11,26 +13,27 @@ type TitleParagraphWrapperProps = {
     text2: string
     spanText?: string
     colorSpan?: 'pink-accent' | 'green-accent' | 'light-primary'
-    color2?: 'text' | 'grey-label'
-    marginContainer?: 'margin-top-40'
-    margin1?: 'margin-top-24'
-    margin2?: 'margin-top-16' | 'margin-top-12'
     children?: React.ReactNode
 }
 
-export const TitleParagraphWrapper = ({ label, text1, spanText, text2, colorSpan, color2,
-                                        marginContainer, margin1, margin2, children}: TitleParagraphWrapperProps) => {
-    
+export const TitleParagraphWrapper = ({ label, text1, spanText, text2, colorSpan, children }: TitleParagraphWrapperProps) => {
+
     return (
-        <Container flex='title-paragraph-wrapper' marginTop={marginContainer} padding='lg-padding-right-48'>
-            {label && <Label num={label}/>}
-            {children}
-            <Text tag='h3' color='text'>
-                {spanText && <Text tag='span' spanType='h3-like' margin={margin1} color={colorSpan}>{spanText}</Text>}
-                {text1}</Text>
-            <Text tag='p' pType='body2' margin={margin2} color={color2}>
-                {text2}
-            </Text>
+        <Container padding='lg-padding-right-48'>
+            <div className='title-paragraph-wrapper-2'>
+                {label && <Label num={label} />}
+                {children}
+                <div className={clsx({ 'title-paragraph-wrapper-2__title--secondary': !label, 'title-paragraph-wrapper-2__title--primary': label })}>
+                    <Text tag='h3' color='text'>
+                        {spanText && <Text tag='span' spanType='h3-like' color={colorSpan}>{spanText}</Text>}
+                        {text1}</Text>
+                </div>
+                <div className={clsx({ 'title-paragraph-wrapper-2__paragraph--secondary': !label }, { 'title-paragraph-wrapper-2__paragraph--primary': label })}>
+                    <Text tag='p' pType='body2' color={label ? 'text' : 'grey-label'}>
+                        {text2}
+                    </Text>
+                </div>
+            </div>
         </Container>
     )
 }

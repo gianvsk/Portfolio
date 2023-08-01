@@ -1,5 +1,19 @@
 @import '../../../style/style.scss';
 
+.title-list {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+
+    &__title-list {
+        display:flex;
+        flex-direction: column;
+        gap:24px;
+    }
+}
+
+
+
 .list {
     background-color: map-get($palette, base);
     padding:0;
@@ -15,10 +29,6 @@
     }
 }
 
-.icon-spacing {
-    margin-bottom: 24px;
-}
-
 .icon-size {
     width:32px;
     height:32px;
@@ -28,7 +38,6 @@
     position: relative;
     width: 32px;
     height: 32px;
-    margin: 0 0 24px 0;
     background-image: url('/images/icons/Square.jpg');
     background-size: cover;
     background-position: 50%;
@@ -38,7 +47,6 @@
     position: relative;
     width: 32px;
     height: 32px;
-    margin: 0 0 24px 0;
     background-image: url('/images/icons/Ellipse.jpg');
     background-size: cover;
     background-position: 50%;
@@ -48,7 +56,6 @@
     position: relative;
     width: 25px;
     height: 25px;
-    margin: 0 0 24px 0;
     background-image: url('/images/icons/Pen.svg');
     background-size: cover;
     background-position: 50%;
@@ -59,6 +66,20 @@
 }
 
 @media screen and (min-width:768px) {
+
+    .title-list {
+        display:flex;
+        flex-direction: row;
+        gap:0;
+        column-gap: 24px;
+    
+        &__title-list {
+            display:flex;
+            flex-direction: column;
+            gap:24px;
+        }
+    }
+
     .list {
         background-color: #000;
         margin: 0;
@@ -66,7 +87,6 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         flex-direction: row;
-        padding: 0 0 0 24px;
         column-gap:24px;
         row-gap:40px;
 
