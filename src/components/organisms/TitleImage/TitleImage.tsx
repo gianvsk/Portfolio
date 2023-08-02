@@ -10,7 +10,7 @@ type TitleImageProps = {
     text: string
     buttonText: string
     image?: 'first' | 'second' | 'third'
-    biggerTitle?: true | false
+    biggerTitle?: boolean
 }
 
 export const TitleImage = ({ title, text, buttonText, image, biggerTitle }: TitleImageProps) => {
@@ -19,7 +19,7 @@ export const TitleImage = ({ title, text, buttonText, image, biggerTitle }: Titl
         <>
             <Container backgroundColor='bg-peach'>
                 <div className='title-image'>
-                    <div className={clsx('philosophy', { 'bigger-title-width': biggerTitle , 'xl-bg-violet' : image === 'second'} )}>
+                    <div className={clsx('philosophy', { 'bigger-title-width': biggerTitle, 'xl-bg-violet': image === 'second' })}>
                         <div className='philosophy__container'>
                             <Text tag='h2' color='base'>{title}</Text>
                             <Text tag='p' pType='body1' color={'darkest-grey'} /* margin={marginText} */>

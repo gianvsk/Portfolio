@@ -8,7 +8,7 @@ export const LinksWrapper = () => {
             <Link text={'Experience'}/>
             <Link text={'Work'}/>
             <Link text={'Photograpy'}/>
-            <Link text={'Contact'}/>
+            <Link text={'Contact'} activated={true}/>
         </div>
     )
 

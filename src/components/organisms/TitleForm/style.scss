@@ -23,6 +23,24 @@
 @media screen and (min-width: 768px) {
 
     .title-form {
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 182px 120px 182px;
+
+        &__titles {
+            width:50%;
+        }
+
+        &__form {
+            width:50%;
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    
+    .title-form {
         flex-direction: row;
         align-items: flex-start;
         padding: 120px 182px 120px 182px;
@@ -35,5 +53,4 @@
             width:50%;
         }
     }
-
 }

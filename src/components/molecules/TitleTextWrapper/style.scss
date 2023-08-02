@@ -1,0 +1,26 @@
+.title-text-wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__paragraph {
+        margin-top: 16px;
+    }
+
+    &__link {
+        margin-top:40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.title-text-wrapper {
+
+    &__paragraph {
+        margin-top: 24px;
+    }
+
+}
+
+}

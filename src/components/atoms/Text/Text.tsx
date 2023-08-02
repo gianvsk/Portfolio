@@ -11,14 +11,13 @@ type TextProps = {
     color?: 'text' | 'base' | 'light-grey' | 'green-accent' | 'light-primary' | 'pink-accent' | 'level1' | 'darkest-grey' |
             'middle-grey' | 'grey-label'
     modifier?: 'uppercase' | 'text-align-left'
-    margin? : 'margin-top-12' | 'margin-bottom-16' | 'margin-top-16' | 'margin-top-24' | 'margin-bottom-12' | 'margin-top-40'
+    margin?: 'margin-top-16' | 'margin-top-24' | 'margin-top-40'
             | 'margin-0'
-    marginLg? : 'lg-margin-bottom-32'
     colorHover?: 'hover-base' | 'hover-text'
     children: React.ReactNode
 }
 
-export const Text = ({tag, tagXl, aType, spanType, pType, color, modifier, margin, marginLg, children}: TextProps) => {
+export const Text = ({tag, tagXl, aType, spanType, pType, color, modifier, margin, children}: TextProps) => {
 
     const Tag = tag
 
@@ -40,8 +39,6 @@ export const Text = ({tag, tagXl, aType, spanType, pType, color, modifier, margi
                 switch(spanType) {
                     case 'button':
                         return 'button'
-                    case 'h2-like':
-                        return 'h2-like'
                     case 'h3-like':
                         return 'h3-like'
                     case 'overline' : 
@@ -57,10 +54,10 @@ export const Text = ({tag, tagXl, aType, spanType, pType, color, modifier, margi
                 return aType === 'simple' ? 'simple' : 'a'
                 
         }
-    }, [tag, spanType, pType])
+    }, [tag, spanType, pType, aType])
 
     return(
-        <Tag className={clsx(tagStyle, tagXl, color, modifier, margin, marginLg)}>
+        <Tag className={clsx(tagStyle, tagXl, color, modifier, margin)}>
             {children}
         </Tag>
     )

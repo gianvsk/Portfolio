@@ -1,6 +1,6 @@
 @import '../../../style/style.scss';
 
-.card--primary {
+.card {
     padding:0;
     background-color: map-get($palette, level1);
 
@@ -18,19 +18,8 @@
         justify-content: flex-start;
         gap: 16px;
     }
-}
 
-.card--secondary {
-    padding:0;
-    background-color: map-get($palette, level1);
-
-    &__image {
-        height:100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    &__body {
+    &__body--big {
         padding:64px;
         display:flex;
         flex-direction: column;
@@ -52,28 +41,23 @@
 
 @media screen and (min-width:768px) {
     
-    .card--primary {
+    .card {
         margin:0;
     
         &__image {
             height:620px;
         }
 
+        &__image--big {
+            height:360px;
+        }
+
         &__body {
             padding:24px 20px;
             gap: 18px;
         }
-    }
 
-    .card--secondary {
-        padding:0;
-        background-color: map-get($palette, level1);
-    
-        &__image {
-            height:360px;
-        }
-    
-        &__body {
+        &__body--big {
             padding:64px;
             display:flex;
             flex-direction: column;

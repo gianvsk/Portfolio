@@ -11,11 +11,6 @@
     text-transform: uppercase;
     color: map-get($palette, text);
     margin:auto auto;
-
-    &:hover {
-        background-color: map-get($palette, primary);
-        color: map-get($palette, text);
-    }
 }
 
 .button-small {
@@ -30,10 +25,8 @@
     text-transform: uppercase;
     color: map-get($palette, text);
     margin:0;
-
     &:hover {
-        background-color: map-get($palette, primary);
-        color: map-get($palette, text);
+        color:map-get($palette, text);
     }
 }
 
@@ -52,9 +45,13 @@
     margin:0;
 
     &:hover {
-        background-color: map-get($palette, primary);
         color: map-get($palette, text);
     }
+}
+
+.activated {
+    background-color: map-get($palette, primary);
+    color: map-get($palette, text)
 }
 
 .button-invisible {

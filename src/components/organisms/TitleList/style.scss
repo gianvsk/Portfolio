@@ -1,5 +1,11 @@
 @import '../../../style/style.scss';
 
+.title-list-container {
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .title-list {
     display:flex;
     flex-direction: column;
@@ -67,11 +73,18 @@
 
 @media screen and (min-width:768px) {
 
+    .title-list-container {
+        display:flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
     .title-list {
         display:flex;
         flex-direction: row;
         gap:0;
         column-gap: 24px;
+        padding-right: 48px;
     
         &__title-list {
             display:flex;
@@ -91,7 +104,7 @@
         row-gap:40px;
 
         &__container {
-            width: 48%;
+            width: 47%;
         }
     }
     

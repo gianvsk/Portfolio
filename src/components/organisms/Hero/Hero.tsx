@@ -1,5 +1,5 @@
 import './style.scss'
-import { ProfileImage } from "../ProfileImage/ProfileImage"
+import { ProfileImage } from '../../atoms/ProfileImage/ProfileImage'
 import { Text } from "../../atoms/Text/Text"
 
 

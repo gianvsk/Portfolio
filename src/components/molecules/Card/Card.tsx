@@ -7,18 +7,19 @@ type CardProps = {
     title?: string
     paragraph: string
     children?: React.ReactNode
+    big?: boolean
 }
 
-export const Card = ({ source, title, paragraph, children }: CardProps) => {
+export const Card = ({ source, title, paragraph, big, children }: CardProps) => {
 
     return (
         <>
 
-            <article className={clsx('card--primary',{'card--secondary' : children})}>
-                <img className={clsx('card--primary__image', {'card--secondary__image' : children})} src={source} />
-                <div className={clsx('card--primary__body',{'card--secondary__body' : children})}>
+            <article className={clsx('card')}>
+                <img className={clsx('card__image', {'card__image--big' : big})} src={source} />
+                <div className={clsx('card__body',{'card__body--big' : big})}>
                     {title && <Text tag='h3' color='text'>{title}</Text>}
-                    <Text tag='p' pType='body1' color={ children ? 'text' : 'grey-label'}>{paragraph}</Text>
+                    <Text tag='p' pType='body1' color={ big ? 'text' : 'grey-label'}>{paragraph}</Text>
                     {children}
                 </div>
             </article>

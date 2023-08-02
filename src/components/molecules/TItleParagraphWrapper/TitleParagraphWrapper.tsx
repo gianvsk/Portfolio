@@ -5,8 +5,6 @@ import { Container } from "../../atoms/Container/Container"
 import { Label } from '../../atoms/Label/Label'
 import clsx from 'clsx'
 
-/* import { useMemo } from 'react' */
-
 type TitleParagraphWrapperProps = {
     label?: string
     text1: string
@@ -20,15 +18,15 @@ export const TitleParagraphWrapper = ({ label, text1, spanText, text2, colorSpan
 
     return (
         <Container padding='lg-padding-right-48'>
-            <div className='title-paragraph-wrapper-2'>
+            <div className='title-paragraph-wrapper'>
                 {label && <Label num={label} />}
                 {children}
-                <div className={clsx({ 'title-paragraph-wrapper-2__title--secondary': !label, 'title-paragraph-wrapper-2__title--primary': label })}>
+                <div className={clsx('title-paragraph-wrapper__title--secondary',{ 'title-paragraph-wrapper__title--primary': label })}>
                     <Text tag='h3' color='text'>
                         {spanText && <Text tag='span' spanType='h3-like' color={colorSpan}>{spanText}</Text>}
                         {text1}</Text>
                 </div>
-                <div className={clsx({ 'title-paragraph-wrapper-2__paragraph--secondary': !label }, { 'title-paragraph-wrapper-2__paragraph--primary': label })}>
+                <div className={clsx('title-paragraph-wrapper__paragraph--secondary', { 'title-paragraph-wrapper__paragraph--primary': label })}>
                     <Text tag='p' pType='body2' color={label ? 'text' : 'grey-label'}>
                         {text2}
                     </Text>

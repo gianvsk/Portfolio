@@ -1,21 +1,21 @@
 import '../../../style/style.scss'
-import { Text } from '../../atoms/Text/Text'
 import { Container } from '../../atoms/Container/Container'
 import './style.scss'
 import { TitleParagraphWrapper } from '../../molecules/TItleParagraphWrapper/TitleParagraphWrapper'
+import { TitleTextWrapper } from '../../molecules/TitleTextWrapper/TitleTextWrapper'
 
 export const TitleList = () => {
 
     return (
 
         <Container padding='padding-xl' backgroundColor='bg-base'>
+            <div className='title-list-container'>
             <div className='title-list'>
-            <div className='title-list__title'>
-                <Text tag='h1' color='text' tagXl='xl-h3'>Skillset</Text>
-                <Text tag='p' pType='body1' color='grey-label'>
-                    With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a
-                    full fledged project. Whatever your needs are, I can pretty much take on any challenge.
-                </Text>
+                <TitleTextWrapper 
+                    title='Skillset' 
+                    text='With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. 
+                    Whatever your needs are, I can pretty much take on any challenge.'
+                    />
             </div>
             <ul className='list'>
                 <div className='list__container'>
@@ -28,7 +28,6 @@ export const TitleList = () => {
                     </TitleParagraphWrapper>
                 </div>
                 <div className='list__container'>
-                    <Container flex='title-paragraph-wrapper'>
                         <TitleParagraphWrapper
                             text1='Visual Design'
                             text2='My experience at dribbble has helped me learn to develop the eye for design. Colors, typography,
@@ -38,7 +37,6 @@ export const TitleList = () => {
                                 <img className='icon-diagonal' src='/images/icons/DiagonalLine.svg' />
                             </div>
                         </TitleParagraphWrapper>
-                    </Container>
                 </div>
                 <div className='list__container'>
                     <TitleParagraphWrapper

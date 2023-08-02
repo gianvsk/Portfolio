@@ -29,14 +29,11 @@
 .markers-container {
     width:100%;
     height:37px;
+    box-sizing: border-box;
     display:flex;
     justify-content: flex-start;
     align-items: center;
     background-color: map-get($palette,level1);
-
-    &__markers {
-        padding-left:16px;
-    }
 }
 
 .central-image {
@@ -50,7 +47,7 @@
 @media screen and (min-width:768px) {
     
     .central-image-container-elements {
-        width: 1076px;
+        width: 90%;
         gap: 120px;
         margin: 120px auto 120px auto;
     
@@ -67,10 +64,6 @@
         width:100%;
         height:37px;
         background-color: map-get($palette,level1);
-    
-        &__markers {
-            padding-left:16px;
-        }
     }
     
     .central-image {
@@ -82,3 +75,11 @@
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    
+    .central-image-container-elements {
+        width:1076px;
+    }
+
+}   
