@@ -61,7 +61,7 @@
     padding: 5px 0;
     border-bottom: 1px solid map-get($palette, darkest-grey);
     &:hover {
-        color: map-get($palette, base);
+        color: map-get($palette, text);
     }
 }
 
