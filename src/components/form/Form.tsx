@@ -8,11 +8,11 @@ export const Form = () => {
         <div className="form">
             <div className="label-input-container">
             <Text tag='span' spanType='p-like' color='text' modifier='text-align-left'>Name</Text>
-            <input className='form__input' type='text'/>
+            <input className='form__input' type='text' required/>
             </div>
             <div className="label-input-container">
             <Text tag='span' spanType='p-like' color='text' modifier='text-align-left'>Email</Text>
-            <input className='form__input' type='email'/>
+            <input className='form__input' type='email' required/>
             </div>
             <div className="label-input-container">
             <Text tag='span' spanType='p-like' color='text' modifier='text-align-left'>Message</Text>
