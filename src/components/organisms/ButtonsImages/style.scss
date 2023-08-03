@@ -31,7 +31,7 @@
 
     &__buttons {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 24px;
     }
 
@@ -61,7 +61,7 @@
     &__images {
       justify-content: space-between;
     }
-
+    
     .image-from-carousel {
       width: 23.5%;
     }
